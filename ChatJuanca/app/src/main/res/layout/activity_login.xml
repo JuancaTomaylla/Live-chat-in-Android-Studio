@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tomaylla.juanca.chatjuanca.Login"
+    android:background="@drawable/fondoaux">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/eTusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:hint="Usuario"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/eTcontraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_lock_closed"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+
+        <RadioButton
+            android:id="@+id/RBSecion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="No Cerrar Sesión"
+            android:textColorHint="@color/cardview_light_background"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tvlog"
+        android:hint="No tengo una cuenta"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logologin"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Juanca Chat"
+        android:textColor="@color/colorWhite"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bTingresar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="#b8e935"
+        android:drawableLeft="@drawable/ic_action_key"
+        android:hint="Ingresar"
+        android:textColorHint="@color/colorWhite"
+        android:theme="@style/BotonColores" />
+
+</RelativeLayout>
